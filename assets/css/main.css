@@ -1,0 +1,189 @@
+/* 
+===================================================
+                fonts
+===================================================
+*/
+@font-face {
+    font-family: 'Roboto Condensed';
+    font-display:swap;src: local('roboto_condensedbold'),url(../fonts/robotocondensed-bold-webfont.woff) format('woff2'),url(../fonts/robotocondensed-bold-webfont.woff) format('woff');
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    font-display:swap;src: local('roboto_condensedregular'),url(../fonts/robotocondensed-regular-webfont.woff2) format('woff2'),url(../fonts/robotocondensed-regular-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    font-display:swap;src: local('roboto_condensedlight'),url(../fonts/robotocondensed-light-webfont.woff2) format('woff2'),url(../fonts/robotocondensed-light-webfont.woff2) format('woff');
+    font-weight: 300;
+    font-style: normal
+}
+
+
+
+/* 
+===================================================
+                Variables
+===================================================
+*/
+
+:root {
+    --newsred: #f72210;
+    --newspink: #fb9a94;
+}
+
+/* 
+===================================================
+                Header
+===================================================
+*/
+
+.page-header .container {
+    max-width: 1310px;
+    padding: 0;
+    position: relative;
+}
+
+.page-header .header-top {
+    height: 95px;
+    background-color: var(--newsred);
+    padding: 20px 10px 15px;
+}
+
+.page-header .header-middle {
+    background-color: var(--newsred);
+    position: relative;
+    padding: 15px;
+
+}
+
+.header-middle .logo svg {
+    fill: white;
+    display: block;
+    width: 132px;
+    height: 20px;
+}
+
+
+
+
+
+@media screen and (max-width:991px) {
+
+
+    .page-header .header-middle {
+        padding: 15px;
+    }
+
+    .header-top .header-date {
+        display: none;
+    }   
+    .page-header .header-top {
+        position: relative;
+        z-index: 2;
+        padding:0;
+        height: 0;
+    }
+    .header-top .header-signin {
+        position: relative;
+        top: 40px;
+        right: 50px;
+    }
+
+    .header-burger {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    .header-middle .header-burger > span {
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+    
+    .header-burger > span,
+    .header-burger > span::before,
+    .header-burger > span::after {
+        display: block;
+        width: 24px;
+        height: 4px;
+        background-color: var(--newspink);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+
+} 
+
+
+@media screen and (min-width:992px) {
+
+    .page-header .header-middle {
+        background-color: var(--newsred);
+        padding: 10px 15px 10px 15px;
+        position: absolute;
+        transform: translate(-50%,0);
+        top: 0%;
+        left: 50%;
+    }
+
+    .header-middle .logo svg {
+        fill: white;
+        width: 396px;
+        height: 60px;
+        margin: 10px auto 0;
+        display: block;
+    }
+
+    .header-top .header-date date {
+        display: block;
+        font: 16px/34px "Roboto Condensed",sans-serif;
+        color: white;
+    }   
+
+
+}
+
+
+.header-signin .signin1 {
+    color: white;
+    position: relative;
+    font: bold 17px/17px "Roboto Condensed",sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-left: 12px;
+    padding-right: 12px;
+    line-height: 14px;
+}
+
+.header-signin .subscribe1 {
+    background-color: white;
+    color: var(--newsred);
+    padding: 6px 10px 6px 12px;
+}
+
+.header-signin .subscribe1 span {
+    font: bold 17px/17px "Roboto Condensed",sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.header-signin .subscribe1 svg {
+    fill:var(--newsred);
+    display: inline-block;
+    width: 8px;
+    height: 14px;
+    margin-left: 10px;
+}
