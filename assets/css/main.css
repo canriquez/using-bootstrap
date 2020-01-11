@@ -35,6 +35,7 @@
 :root {
     --newsred: #f72210;
     --newspink: #fb9a94;
+    --newsborderwhite: #f4f5f6;
 }
 /* 
 ===================================================
@@ -138,6 +139,10 @@ body {
     margin-right: auto;
 }
 
+.page-header .header-nav{
+    background-color:white;
+    border-bottom-color: var(--newsborderwhite);
+}
 
 @media screen and (min-width: 481px) {
 
@@ -198,6 +203,38 @@ body {
         top: 40px;
         right: 50px;
     }
+
+    .header-nav {
+        position: absolute;
+        top: 50px;
+        right: 0px;
+        width: 220px;
+        height: 100vh;
+        padding: 10px 0;
+    }
+
+    .header-nav-search-inline label {
+        position: absolute;
+        top: 0;
+        right:0;
+    }
+
+    .header-nav-search-inline input{
+        vertical-align: middle;
+        position: absolute;
+        top: 0;
+    }
+    .header-nav-search-inline input [type="text"]{
+        position: absolute;
+        top: 0;
+        font-size: 16px;
+        height: 20px;
+        width:175px;
+        color: rgba(0,0,0,.55);
+        background-color: white;
+    }
+
+
 
 
 } 
