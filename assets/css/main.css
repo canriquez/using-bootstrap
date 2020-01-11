@@ -199,10 +199,6 @@ body {
         right: 50px;
     }
 
-    .header-burger {
-        display: flex;
-    }
-
 
 } 
 
@@ -230,4 +226,8 @@ body {
         font: 16px/34px "Roboto Condensed",sans-serif;
         color: white;
     }   
+
+    .header-middle .header-burger {
+        display: none;
+    }
 }
