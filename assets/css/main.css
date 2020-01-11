@@ -36,6 +36,17 @@
     --newsred: #f72210;
     --newspink: #fb9a94;
 }
+/* 
+===================================================
+                Page Styles
+===================================================
+*/
+
+body {
+    min-width: 320px;
+    background-color: white
+}
+
 
 /* 
 ===================================================
@@ -69,8 +80,101 @@
     height: 20px;
 }
 
+.header-signin {
+    padding-right: 0px; 
+    /* overwriting boots col std padding=15px*/
+}
+
+.header-signin .signin1 {
+    color: white;
+    position: relative;
+    font: bold 14px/14px "Roboto Condensed",sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+    padding:6px 3px 8px 3px;
+
+}
+
+.header-signin .subscribe1 {
+    background-color: white;
+    color: var(--newsred);
+    margin-bottom: 2px;
+}
+
+.header-signin .subscribe1 {
+    font: bold 14px/14px "Roboto Condensed",sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 6px 3px;
+}
+
+.header-middle .header-burger > span {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.header-middle .header-burger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.header-middle .header-burger > span,
+.header-middle .header-burger::before,
+.header-middle .header-burger::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 4px;
+    background-color: var(--newspink);
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
+@media screen and (min-width: 481px) {
+
+    .header-top .header-signin {
+        padding-right: 24px;
+    }
+    
+    .header-signin .signin1 {
+        font-size: 18px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .header-signin .subscribe1 {
+        font-size: 18px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .header-signin .subscribe1 svg {
+        fill:var(--newsred);
+        display: inline-block;
+        width: 8px;
+        height: 14px;
+        margin-left: 10px;
+    }
+
+    .header-middle .header-burger {
+        width: 74px;
+    }
+
+    .header-middle .header-burger > span,
+    .header-middle .header-burger::before,
+    .header-middle .header-burger::after {
+        width:30px;
+    }
+}
 
 
 @media screen and (max-width:991px) {
@@ -97,36 +201,10 @@
 
     .header-burger {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 50px;
-        height: 50px;
-        cursor: pointer;
-        position: absolute;
-        top: 0;
-        right: 0;
     }
-    
-    .header-middle .header-burger > span {
-        margin-top: 4px;
-        margin-bottom: 4px;
-    }
-    
-    .header-burger > span,
-    .header-burger > span::before,
-    .header-burger > span::after {
-        display: block;
-        width: 24px;
-        height: 4px;
-        background-color: var(--newspink);
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
+
 
 } 
-
 
 @media screen and (min-width:992px) {
 
@@ -152,38 +230,4 @@
         font: 16px/34px "Roboto Condensed",sans-serif;
         color: white;
     }   
-
-
-}
-
-
-.header-signin .signin1 {
-    color: white;
-    position: relative;
-    font: bold 17px/17px "Roboto Condensed",sans-serif;
-    text-transform: uppercase;
-    display: inline-block;
-    padding-left: 12px;
-    padding-right: 12px;
-    line-height: 14px;
-}
-
-.header-signin .subscribe1 {
-    background-color: white;
-    color: var(--newsred);
-    padding: 6px 10px 6px 12px;
-}
-
-.header-signin .subscribe1 span {
-    font: bold 17px/17px "Roboto Condensed",sans-serif;
-    text-transform: uppercase;
-    display: inline-block;
-}
-
-.header-signin .subscribe1 svg {
-    fill:var(--newsred);
-    display: inline-block;
-    width: 8px;
-    height: 14px;
-    margin-left: 10px;
 }
