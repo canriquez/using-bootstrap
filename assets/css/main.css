@@ -144,6 +144,31 @@ body {
     border-bottom-color: var(--newsborderwhite);
 }
 
+.header-nav .header-nav-search-form form {
+    display: block;
+}
+
+.header-nav ul.news-navbar {
+    font-size: 21px;
+    line-height: 24px;
+    font-weight: bold;
+    font-family: "Roboto Condensed",sans-serif;
+    color: black;
+    list-style-type:none;
+}
+
+.header-nav ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav .news-navbar a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
 @media screen and (min-width: 481px) {
 
     .header-top .header-signin {
@@ -211,27 +236,61 @@ body {
         width: 220px;
         height: 100vh;
         padding: 10px 0;
+        box-shadow: rgba(0,0,0,.1) -2px 0 2px;
+    }
+
+    .header-nav .header-nav-search-form {
+        position: relative;
+        padding-right: 20px;
+        margin-left: 15px;
+        margin-right: 10px;
     }
 
     .header-nav-search-inline label {
         position: absolute;
         top: 0;
         right:0;
+        background: url(../svg/icon-search-glass.svg) center/contain no-repeat white;
+        width: 20px;
+        height: 20px;
+        clip: auto;
+        margin-bottom: 0px;
     }
 
     .header-nav-search-inline input{
         vertical-align: middle;
-        position: absolute;
-        top: 0;
-    }
-    .header-nav-search-inline input [type="text"]{
-        position: absolute;
-        top: 0;
         font-size: 16px;
         height: 20px;
-        width:175px;
+        width: 175px;
         color: rgba(0,0,0,.55);
         background-color: white;
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
+
+    .header-nav .news-navbar{
+        padding-top: 10px;
+        padding-left: 0px;
+    }
+
+    .header-nav .news-navbar li a {
+        position: relative;
+        padding: 5px 15px;
+    }
+
+    .header-nav .news-navbar li a::after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 8px;
+        height: 14px;
+     background-color: rgba(0,0,0,.55);
+        -webkit-mask-image: url(../svg/icon-arrow-right.svg);
+        margin-left: 10px;
+        position: absolute;
+        right: 15px;
+        top: 12px;
     }
 
 
