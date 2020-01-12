@@ -142,6 +142,7 @@ body {
 .page-header .header-nav{
     background-color:white;
     border-bottom-color: var(--newsborderwhite);
+    visibility: hidden;
 }
 
 .header-nav .header-nav-search-form form {
@@ -229,6 +230,9 @@ body {
         right: 50px;
     }
 
+    .page-header .header-middle:hover  .header-nav {
+        visibility: visible;
+    }
     .header-nav {
         position: absolute;
         top: 50px;

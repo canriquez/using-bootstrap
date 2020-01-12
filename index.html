@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="assets/css/main.css">
 
   <title>Hello, world!</title>
+
 </head>
 
 <body>
@@ -98,6 +99,29 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+    <!-- Small jQuery to manage small screen navbar toggling - Carlos Anriquez -->
+    <script>
+      $(document).ready(function(){
+        $('.header-burger').click(function(){
+          if ( $('.header-nav').css('visibility') == 'hidden' ){
+              $('.header-nav').css('visibility','visible');
+
+              /* check this is not working */
+              $('.header-burger::before').css({
+                'transform':'rotate(-135deg)',
+                '-ms-transform':'rotate(-135deg)',
+                '-moz-transform':'rotate(-135deg)',
+                '-o-transform':'rotate(-135deg)'
+              });
+            }
+            else {
+              $('.header-nav').css('visibility','hidden');
+              $('.header-burger::before').removeClass('animate');
+              $('.header-burger::after').removeClass('animate');
+            }
+        });
+      });
+      </script>
 </body>
 
 </html>
