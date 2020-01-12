@@ -107,17 +107,14 @@
               $('.header-nav').css('visibility','visible');
 
               /* check this is not working */
-              $('.header-burger::before').css({
-                'transform':'rotate(-135deg)',
-                '-ms-transform':'rotate(-135deg)',
-                '-moz-transform':'rotate(-135deg)',
-                '-o-transform':'rotate(-135deg)'
-              });
+              $('.header-burger').addClass('animate-burger');
+              $('.header-burger span').css('display','none');
+
             }
             else {
               $('.header-nav').css('visibility','hidden');
-              $('.header-burger::before').removeClass('animate');
-              $('.header-burger::after').removeClass('animate');
+              $('.header-burger').removeClass('animate-burger');
+              $('.header-burger span').css('display','block');
             }
         });
       });

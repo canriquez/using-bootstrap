@@ -229,6 +229,25 @@ body {
         top: 40px;
         right: 50px;
     }
+    /* --- Burger animate class  */
+    /* You cannot change a pseudo element's property but
+    you coud add a new class and introduce the change with 
+    the new class - animate-burger class added
+    managing the burger to get crossed */
+
+    .animate-burger::before {
+        transform: rotate(-135deg);
+    }
+    .animate-burger::after {
+        transform: rotate(135deg);
+    }
+
+    .animate-burger::before,
+    .animate-burger::after {
+        position: absolute;
+        transition: all .3s ease;
+    }
+    /*  --------------------------- */
 
     .page-header .header-middle:hover  .header-nav {
         visibility: visible;
@@ -289,7 +308,7 @@ body {
         vertical-align: middle;
         width: 8px;
         height: 14px;
-     background-color: rgba(0,0,0,.55);
+        background-color: rgba(0,0,0,.55);
         -webkit-mask-image: url(../svg/icon-arrow-right.svg);
         margin-left: 10px;
         position: absolute;
