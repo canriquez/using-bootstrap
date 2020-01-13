@@ -24,8 +24,6 @@
     font-style: normal
 }
 
-
-
 /* 
 ===================================================
                 Variables
@@ -36,6 +34,7 @@
     --newsred: #f72210;
     --newspink: #fb9a94;
     --newsborderwhite: #f4f5f6;
+    --newswhitesmoke: #d9d9d9;
 }
 /* 
 ===================================================
@@ -48,6 +47,54 @@ body {
     background-color: white
 }
 
+html,body,div,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,ol,ul,li,form,legend,label,table,header,footer,nav,section,figure {
+    margin: 0;
+    padding: 0
+}
+
+/* 
+===================================================
+                special visibility
+===================================================
+*/
+.active{
+  width: 100%;
+}
+
+.fullRow{
+    width: 100%!important;
+}
+.nonActive {
+  width: 0%;
+  overflow:hidden;
+  white-space:nowrap;
+  transition: all 1s ease;
+}
+
+.cursor {
+	position: relative;
+}
+.cursor	i {
+	position: absolute;
+	width: 1px;
+	height: 80%;
+	background-color: gray;
+	left: 5px;
+	top: 10%;
+	animation-name: blink;
+	animation-duration: 1000ms;
+	animation-iteration-count: infinite;
+	opacity: 1;
+}
+
+.cursor input:focus + i {
+	display: none;
+}
+
+@keyframes blink {
+	from { opacity: 1; }
+	to { opacity: 0; }
+}
 
 /* 
 ===================================================
@@ -139,10 +186,17 @@ body {
     margin-right: auto;
 }
 
+
 .page-header .header-nav{
+    display: relative;
     background-color:white;
     border-bottom-color: var(--newsborderwhite);
     visibility: hidden;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    z-index: 1;
 }
 
 .header-nav .header-nav-search-form form {
@@ -235,6 +289,7 @@ body {
     the new class - animate-burger class added
     managing the burger to get crossed */
 
+
     .animate-burger::before {
         transform: rotate(-135deg);
     }
@@ -249,9 +304,7 @@ body {
     }
     /*  --------------------------- */
 
-    .page-header .header-middle:hover  .header-nav {
-        visibility: visible;
-    }
+
     .header-nav {
         position: absolute;
         top: 50px;
@@ -260,6 +313,7 @@ body {
         height: 100vh;
         padding: 10px 0;
         box-shadow: rgba(0,0,0,.1) -2px 0 2px;
+        overflow-y: scroll;
     }
 
     .header-nav .header-nav-search-form {
@@ -315,13 +369,13 @@ body {
         right: 15px;
         top: 12px;
     }
-
-
-
-
 } 
 
 @media screen and (min-width:992px) {
+
+    .header-top .header-signin {
+        padding-right: 0px;
+    }
 
     .page-header .header-middle {
         background-color: var(--newsred);
@@ -349,4 +403,73 @@ body {
     .header-middle .header-burger {
         display: none;
     }
+
+    .page-header .header-nav {
+        visibility: visible;
+        position: relative;
+        padding-right: 100px;
+    }
+
+    .page-header .header-nav::before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        content: "";
+        display: block;
+        width: 78px;
+        background-color: var(--newsred);
+        border-left: 12px solid white;
+        border-top: 13px solid var(--newsred);
+    }
+ 
+    .header-nav .flex-col {
+        width:100%;
+        display:flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+    }
+
+    .header-nav .header-nav-search-inline {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .header-nav .header-nav-search-inline input {
+        width:60px;
+    }
+    .header-nav-search-inline label {
+        background: url(../svg/icon-search-glass.svg) center/contain no-repeat white;
+        width: 20px;
+        height: 20px;
+        clip: auto;
+        margin-bottom: 0px;
+    }
+
+    .header-nav .news-navbar {
+        display: flex;
+        justify-content: center;
+        align-content: space-between;
+        flex-grow: 1;
+        align-items: center;
+    }
+
+    .header-nav .news-navbar li {
+        border-left-color: var(--newswhitesmoke);
+        display: inline-block;
+        flex-grow: 1;
+        text-align: center;
+        list-style: none;
+     /*    padding-left: 2px; */
+        border-left-width: 1px;
+        border-left-style: solid;
+        border-left-color: var(--newswhitesmoke);
+    }
+
+    .page-header .header-nav ul li:first-child {
+        border-left-width: 0;
+        padding-left: 10px;
+    }
+
 }

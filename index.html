@@ -11,7 +11,7 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/main.css">
 
-  <title>Hello, world!</title>
+  <title>Newsweek - News, Analysis, Politics, Business, Technology(canriquez)</title>
 
 </head>
 
@@ -59,7 +59,7 @@
             </g>
           </svg>
         </a>
-        <span class="icons0 header-burger">  
+        <span class="icons0 header-burger">
           <span></span>
         </span>
       </div>
@@ -69,6 +69,7 @@
             <div class="header-nav-search-inline d-flex justify-content-between">
               <label for="search-input"></label>
               <input type="text" id="search-input" class="search-text" placeholder="Search" type="text">
+              <i></i>
             </div>
           </form>
           <ul class="news-navbar">
@@ -99,26 +100,39 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
-    <!-- Small jQuery to manage small screen navbar toggling - Carlos Anriquez -->
-    <script>
-      $(document).ready(function(){
-        $('.header-burger').click(function(){
-          if ( $('.header-nav').css('visibility') == 'hidden' ){
-              $('.header-nav').css('visibility','visible');
+  <!-- Small jQuery to manage small screen navbar toggling - Carlos Anriquez -->
+  <script>
+    $(document).ready(function () {
+      $('.header-burger').click(function () {
+        if ($('.header-nav').css('visibility') == 'hidden') {
+          $('.header-nav').css('visibility', 'visible');
+          $('.header-burger').addClass('animate-burger');
+          $('.header-burger span').css('display', 'none');
+        }
+        else {
+          $('.header-nav').css('visibility', ''); /* Note */
+          $('.header-burger').removeClass('animate-burger');
+          $('.header-burger span').css('display', ''); /* Note */
+        }
+      })
 
-              /* check this is not working */
-              $('.header-burger').addClass('animate-burger');
-              $('.header-burger span').css('display','none');
+      /* Note to self: this method can be used to cancel any style modification you have previously performed.
+      source: https://api.jquery.com/css/ */
 
-            }
-            else {
-              $('.header-nav').css('visibility','hidden');
-              $('.header-burger').removeClass('animate-burger');
-              $('.header-burger span').css('display','block');
-            }
+
+      /* -------- Click on search mignifier - Version 2 -------- */
+
+        $('.header-nav-search-inline label').on('click', function () {
+          $('.header-nav-search-form').toggleClass('active').focus();
+          $('.header-nav-search-inline').toggleClass('cursor').focus();
+          $('.header-nav .header-nav-search-inline input').toggleClass('fullRow').focus();
+          $('.flex-col form').siblings().toggleClass('nonActive').focus();
         });
-      });
-      </script>
+
+/* ---------------------------------------------- */
+
+    });
+  </script>
 </body>
 
 </html>
