@@ -31,10 +31,14 @@
 */
 
 :root {
+    /* header */
     --newsred: #f72210;
     --newspink: #fb9a94;
     --newsborderwhite: #f4f5f6;
     --newswhitesmoke: #d9d9d9;
+
+    /* Main */
+    --featureGray: rgba(3,3,3,.4);
 }
 /* 
 ===================================================
@@ -44,7 +48,11 @@
 
 body {
     min-width: 320px;
-    background-color: white
+    background-color: white;
+    color: #333;
+    font-size: 13px;
+    line-height: 18px;
+    font-family: Arial,Helvetica,sans-serif;
 }
 
 html,body,div,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,ol,ul,li,form,legend,label,table,header,footer,nav,section,figure {
@@ -63,12 +71,12 @@ html,body,div,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,ol,ul,li,form,legend,
 
 .fullRow{
     width: 100%!important;
+
 }
 .nonActive {
   width: 0%;
   overflow:hidden;
   white-space:nowrap;
-  transition: all 1s ease;
 }
 
 .cursor {
@@ -471,5 +479,92 @@ html,body,div,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,ol,ul,li,form,legend,
         border-left-width: 0;
         padding-left: 10px;
     }
+
+}
+
+/* 
+===================================================
+                Main
+===================================================
+*/
+
+.main {
+    background-color: white;
+    padding-top: 20px;
+}
+
+.container-fluid {
+    max-width: 1310px;
+}
+
+.head-story p {
+    font: bold 16px/16px "Roboto Condensed",sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 11px;
+    color: var(--featureGray);
+}
+
+.head-story article {
+    padding-bottom: 20px;
+}
+
+.head-story .article-wrap {
+    position: relative;
+    min-height: 33px;
+    margin-bottom: 10px;
+}
+
+.head-story .category {
+    display: block;
+    padding: 8px 15px 9px;
+    background-color: rgba(255,255,255,.9);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.head-story .category a {
+    font: bold 17px/16px "Roboto Condensed",sans-serif;
+    color: #f72210;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.head-story .image {
+    max-width: 100%;
+    vertical-align: middle;
+    height: auto;
+    overflow: hidden;
+}
+
+.head-story .header-2 {
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.head-story article a {
+    font-family: "Roboto Condensed",sans-serif;
+    margin-bottom: 10px;
+    position: relative;
+    color: black;
+}
+
+.more-story-content .more-story-article {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-top: 1px solid #ddd;
+}
+
+.more-story-article h4 {
+    font-size: 17px;
+    line-height: 20px;
+}
+
+
+@media (max-width: 767px) and (min-width: 481px) {
+ .more-story-content .more-story-article .image {
+    width: 258px;
 
 }
