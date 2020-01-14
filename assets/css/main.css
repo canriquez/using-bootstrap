@@ -707,6 +707,15 @@ html,body,div,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,ol,ul,li,form,legend,
 
 }
 
+.special-item-right .image>a>span{
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 66.75%;
+    background: url(../img/sponsored-item4.png);
+    background-size: cover;
+}
+
 
 @media (max-width: 767px) and (min-width: 481px) {
     .more-story-content .more-story-article .image {
