@@ -693,6 +693,8 @@ html,body,div,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,ol,ul,li,form,legend,
     padding: 10px 0;
 }
 
+/* ----------- Special Items subsection */
+
 .special-item-right .article-wrap {
     margin-bottom: 0;
 }
@@ -779,10 +781,70 @@ html,body,div,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,ol,ul,li,form,legend,
     margin-right: 15px;
 }
 
+/* sponsored items sub-category */
+
+.special-item-sub .head-story {
+    padding-bottom: 30px;
+}
+
+/* ---------singup box  ------------- */
+
+.signup-news {
+    max-width: 300px;
+    margin: 0 auto 30px;
+    border: 1px solid #e5e5e5;
+    background-color: #f4f5f6;
+    padding: 20px;
+}
+
+.box-title {
+    font: bold 19px/19px "Roboto Condensed",sans-serif;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.box-title .icon-news {
+    display: block;
+    width: 29px;
+    height: 28px;
+    background: url(../svg/singup-logo.svg) center/contain no-repeat #f72210;
+    margin-right: 10px; 
+}
+
+.gray-button {
+    display: inline-block;
+    padding: 10px 10px 10px 12px;
+    color: white;
+    font: bold 18px/18px "Roboto Condensed",sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    background-color: #666;
+}
+
+.gray-button::after {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 14px;
+    margin-left: 10px;
+    background: url(../svg/icon-arrow-right.svg) center/contain no-repeat;
+}
+
+.small-link {
+    color: #333;
+    font: bold 15px/15px "Roboto Condensed",sans-serif;
+}
+
+@media screen and (max-width: 991px) and (min-width: 668px)  {
+    .col3 .special-item-right {
+        max-width: 330px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
 
-
-@media (max-width: 767px) and (min-width: 481px) {
+@media screen and (max-width: 767px) and (min-width: 481px) {
     .more-story-content .more-story-article .image {
         width: 258px;
         height: 172px;
@@ -797,5 +859,22 @@ html,body,div,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,ol,ul,li,form,legend,
 @media screen and (min-width:768px) {
     .culture-story-content .culture-item {
         width: 50%;
+    }
+
+    .head-story .image span{
+        display: block;
+        position: relative;
+        padding-bottom: 76.5%;
+        overflow: hidden;
+    }
+
+    .top-story-content .head-story img {
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    max-width: inherit;
+    width: auto;
     }
 }
