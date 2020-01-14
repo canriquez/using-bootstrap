@@ -501,6 +501,14 @@ html,body,div,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,ol,ul,li,form,legend,
 }
 
 
+.col1 .col-wrap,
+.col2 .col-wrap,
+.col3 .col-wrap,
+.col4 .col-wrap {
+     padding-left: 15px;
+     padding-right: 15px;
+ }
+
 .head-story p {
     font: bold 16px/16px "Roboto Condensed",sans-serif;
     text-transform: uppercase;
@@ -857,6 +865,30 @@ html,body,div,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,ol,ul,li,form,legend,
 }
 
 @media screen and (min-width:768px) {
+
+    .container-fluid {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .wrap-col-top .col1 {
+        width: 41%;
+    }
+
+    .wrap-col-top .col2 {
+        width: 59%;
+    }
+
+    .wrap-col-top .col3 {
+        width: 29%;
+    }
+
+    .wrap-col-top .col4 {
+        width: 71%;
+    }
+
+
+
     .culture-story-content .culture-item {
         width: 50%;
     }
