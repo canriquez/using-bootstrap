@@ -977,6 +977,15 @@ html,body,div,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,ol,ul,li,form,legend,
     width: 25%;
 } */
 
+
+.magazine-phisical {
+    margin-top:78px;
+}
+
+.magazine-3-features {
+    height: auto;
+}
+
 .magazine-phisical .wrap {
     position: relative;
 }
@@ -1082,7 +1091,7 @@ html,body,div,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,ol,ul,li,form,legend,
 }
 
 .magazine article .overlay {
-        position: relative;
+    position: relative;
 }
 
 .magazine .overlay .image {
@@ -1110,4 +1119,61 @@ html,body,div,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,ol,ul,li,form,legend,
 .magazine .in-focus h5 {
     margin-top: 10px;
     text-transform: uppercase;
+}
+
+
+@media screen and (min-width: 768px) {
+    .box-title {
+        border-bottom: 1px solid #d9d9d9;
+        padding-bottom: 8px;
+    }
+
+    .magazine article .image,
+    .magazine .overlay .image {
+        display: block;
+        position: relative;
+        padding-bottom: 100%;
+        overflow: hidden;
+        width: 100%;
+    }
+    
+
+    .magazine article .image  img,
+    .magazine overlay img {
+        transform: translate(-50%,0%);
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: auto;
+        height: 100%;
+        max-width: inherit;
+    }
+
+    .magazine-3-features article:first-of-type .image img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    .magazine h5 {
+        margin-bottom: 0;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .magazine .full-row-bottom {
+        padding-top: 30px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .col-sm-3,
+    .col-sm-9,
+    .col-sm-4 {
+        position: relative;
+        min-width: 100%!important;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
 }
