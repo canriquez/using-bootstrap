@@ -978,9 +978,7 @@ html,body,div,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,ol,ul,li,form,legend,
 } */
 
 
-.magazine-phisical {
-    margin-top:78px;
-}
+
 
 .magazine-3-features {
     height: auto;
@@ -1123,6 +1121,11 @@ html,body,div,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,ol,ul,li,form,legend,
 
 
 @media screen and (min-width: 768px) {
+
+    .magazine-phisical {
+        margin-top:78px;
+    }
+    
     .box-title {
         border-bottom: 1px solid #d9d9d9;
         padding-bottom: 8px;
