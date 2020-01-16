@@ -63,7 +63,7 @@
 
 body {
     min-width: 320px;
-    background-color: white;
+    background-color: #f4f5f6;
     color: #333;
     font-size: 13px;
     line-height: 18px;
@@ -1438,3 +1438,21 @@ html,body,div,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,ol,ul,li,form,legend,
         order: 1;
     }
 }
+
+/* 
+===================================================
+                Editor's Picks
+===================================================
+*/
+
+.picks-features .box-title {
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 8px;
+}
+
+.picks-features .col-wrap {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
