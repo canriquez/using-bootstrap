@@ -1701,7 +1701,13 @@ html,body,div,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,ol,ul,li,form,legend,
 
 @media screen and (max-width: 767px) {
 
-    .column2 .c2-subscribe-wrap  {
+    .subscribe-block .column2 .c2-subscribe-wrap {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .subscribe-block .column1 .subscribe-wrap {
+        width: 100%;
         flex-wrap: wrap;
     }
 
@@ -1743,6 +1749,10 @@ html,body,div,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,ol,ul,li,form,legend,
     .newsletter-image {
         max-width: 191px;
         background: url(../img/newsletter.png) center center / cover no-repeat;
+    }
+
+    .subscribe-block .column2 .c2-subscribe-wrap {
+        width: 100%;
     }
 
 }
