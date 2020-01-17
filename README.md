@@ -4,7 +4,7 @@
 
 [Original Page](http://newsweek.com/)
 
-![screenshot](./assets/page_capture.png)
+![screenshot](assets/page_capture.png)
 
 ## General Page Structure
  
