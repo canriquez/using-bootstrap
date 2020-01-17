@@ -4,7 +4,7 @@
 
 [Original Page](http://newsweek.com/)
 
-![screenshot](/assets/page_capture.png)
+![screenshot](../assets/page_capture.png)
 
 ## General Page Structure
  
@@ -25,8 +25,8 @@ The following media breaks represent a key CSS responsiveness detail in the page
 
 - 991px media
 Column-4 contains:
-   > Column 1 ('Top-Story', 'Culture an Travel' and 'More Stories' subsections)
-   > Column 2 ('Featured Stories', 'sponsored Insights')
+   - Column 1 ('Top-Story', 'Culture an Travel' and 'More Stories' subsections)
+   - Column 2 ('Featured Stories', 'sponsored Insights')
 Column-3 contains: 'Opinion", 'Latest News', 'Sponsored Insights', 'Sign Up' and some more 'Sponsored Insights.
 - On media <992, Columns structure changes To the following: 
     > Column 4 is placed on 100% of the viewport with Column 2 on 45% and Column 1 55% of that viewport. Article order and structure remain the same.
