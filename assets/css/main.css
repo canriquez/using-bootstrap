@@ -1537,6 +1537,15 @@ html,body,div,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,ol,ul,li,form,legend,
     position: relative;
 }
 
+ .subscribe-block .column1,
+.subscribe-block .column2 {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+} 
+
+.subscribe-block .column2 .head-story-red {
+    flex-basis: 100%;
+}
 
 
 .subscribe-block::before {
@@ -1546,7 +1555,13 @@ html,body,div,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,ol,ul,li,form,legend,
     height: 2px;
     position: absolute;
     top: 0;
+    z-index: 999;
 
+}
+
+.subscribe-block::before {
+    left: -30px;
+    right: -30px;
 }
 
 .column1 .subscribe-wrap {
@@ -1733,5 +1748,21 @@ html,body,div,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,ol,ul,li,form,legend,
 }
 
 @media screen and (min-width: 992px) {
+
+    .subscribe-block {
+        padding-top: 70px;
+    }
+
+    .subscribe-block .column1 .head-story-red {
+        position: absolute;
+        top: -30px;
+        left: 15px;
+    }
+
+    .subscribe-block .column2 .head-story-red {
+        position: absolute;
+        top: -30px;
+        left: 15px;
+    }
 
 }
