@@ -426,7 +426,7 @@ html,body,div,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,ol,ul,li,form,legend,
         display: block;
     }
 
-    .header-top .header-date date {
+    .header-top .header-date {
         display: block;
         font: 16px/34px "Roboto Condensed",sans-serif;
         color: white;
@@ -1276,7 +1276,7 @@ html,body,div,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,ol,ul,li,form,legend,
     display: block;
 }
 
-.newsweek-videos .key-video summary {
+.newsweek-videos .key-video div.details {
     font-size: 16px;
     line-height: 24px;
     color: #c6c6c6;
