@@ -1533,24 +1533,40 @@ html,body,div,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,ol,ul,li,form,legend,
 */
 
 .subscribe-block {
-    max-width: 100%;
+    padding-top: 40px;
+    position: relative;
+}
+
+
+
+.subscribe-block::before {
+    content: "";
+    display: block;
+    background-color:#f4f5f6;
+    height: 2px;
+    position: absolute;
+    top: 0;
+
 }
 
 .column1 .subscribe-wrap {
-    padding: 24px 20px 20px 20px;
     background-color: #f4f5f6;
-}
-.subscribe-block .image-wrap {
-    position: relative;
-    margin-bottom: 15px;
-
 }
 
 .subscribe-wrap {
     margin-bottom: 40px;
 }
 
-.subscribe-block .last-week img {
+.subscribe-block .image-wrap {
+    position: relative;
+    padding-bottom: 13px;
+    padding-right: 90px;
+    display: inline-block;
+
+}
+
+.subscribe-block .last-week img,
+.subscribe-block .next-week img {
     width: 100%;
     display: block;
     margin-left: auto;
@@ -1558,15 +1574,21 @@ html,body,div,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,ol,ul,li,form,legend,
 }
 
 
-.subscribe-block .info {
-    text-align: center;
-}
-
-.subscribe-block .last-week {
+.subscribe-block .last-week,
+.subscribe-block .next-week {
     width: 170px;
     height: 228px;
 }
 
+.subscribe-block .next-week {
+    position: absolute;
+    top: 13px;
+    left: 80px;
+}
+
+.subscribe-block .info {
+    text-align: center;
+}
 
 .subscribe-block .info h3,
 .subscribe-block .c2-info h3 {
@@ -1593,29 +1615,34 @@ html,body,div,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,ol,ul,li,form,legend,
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 24px 20px 20px;
+    }
+
+    .subscribe-block .image-wrap {
+        margin-bottom: 15px;
     }
    
 }
 
 @media screen and (min-width: 768px) {
+
+    .subscribe-block .column1 .subscribe-wrap {
+        padding: 0;
+    }
+
     .subscribe-wrap .placement-wrap {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-
+        padding: 30px;
     }
 
     .subscribe-block .image-wrap {
         margin-bottom: 0px;
     }
-    .subscribe-wrap .image-wrap {
-        width: 25%;
-    /*     flex:1; */
-    }
 
     .subscribe-wrap .info {
-        width: 70%;
         text-align: left;
         padding-left: 30px;
     }
@@ -1633,6 +1660,11 @@ html,body,div,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,ol,ul,li,form,legend,
     .subscribe-block .column1,
     .subscribe-block .column2 {
         margin-bottom: 40px;
+    }
+
+    .subscribe-block::before {
+        left: -30px;
+        right: -30px;
     }
 }
 
@@ -1701,12 +1733,5 @@ html,body,div,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,ol,ul,li,form,legend,
 }
 
 @media screen and (min-width: 992px) {
-    .subscribe-block .column2{
-        flex: 0 0 40.66666667%!important;
-        max-width: 40.66666667%!important;
-    }
-    .subscribe-block .column1{
-        flex: 0 0 59.33333333%!important;
-        max-width: 59.33333333%!important;
-    }
+
 }
