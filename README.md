@@ -4,7 +4,7 @@
 
 [Original Page](http://newsweek.com/)
 
-![screenshot](../assets/page_capture.png)
+![screenshot](assets/img/page_capture.png)
 
 ## General Page Structure
  
@@ -29,16 +29,16 @@ Column-4 contains:
    - Column 2 ('Featured Stories', 'sponsored Insights')
 Column-3 contains: 'Opinion", 'Latest News', 'Sponsored Insights', 'Sign Up' and some more 'Sponsored Insights.
 - On media <992, Columns structure changes To the following: 
-    > Column 4 is placed on 100% of the viewport with Column 2 on 45% and Column 1 55% of that viewport. Article order and structure remain the same.
+    - Column 4 is placed on 100% of the viewport with Column 2 on 45% and Column 1 55% of that viewport. Article order and structure remain the same.
         - Column 2 ('Featured Stories', 'sponsored Insights') - To the left of view port.
         - Column 1 ('Top-Story', 'Culture an Travel' and 'More Stories' subsections)
-    > Column 3 locates now wrapping below column 4 with the same order in articles
-    > Column-3 contains: 'Opinion", 'Latest News', 'Sponsored Insights', 'Sign Up' and some more 'Sponsored Insights.
+    - Column 3 locates now wrapping below column 4 with the same order in articles
+    - Column-3 contains: 'Opinion", 'Latest News', 'Sponsored Insights', 'Sign Up' and some more 'Sponsored Insights.
 - On media <768, Columns structure changes and becomes a single page column 
-    > Column 4 goes on top position, but now Column 1 and 2 are shown on 100% viewport wrapping on top of each other.
-    > Column 1, this time, goes first with a change in sub-columns order: ('Top-Story,' 'More Stories', and then 'Culture and Travel.'
-    > Column 2, wraps below showing  'Featured Stories' and then 'sponsored Insights.'
-    > Column 3 comes last with the same order: 'Opinion", 'Latest News,' 'Sponsored Insights,' 'Sign Up', and some more 'Sponsored Insights.
+    - Column 4 goes on top position, but now Column 1 and 2 are shown on 100% viewport wrapping on top of each other.
+    - Column 1, this time, goes first with a change in sub-columns order: ('Top-Story,' 'More Stories', and then 'Culture and Travel.'
+    - Column 2, wraps below showing  'Featured Stories' and then 'sponsored Insights.'
+    - Column 3 comes last with the same order: 'Opinion", 'Latest News,' 'Sponsored Insights,' 'Sign Up', and some more 'Sponsored Insights.
  
 The rest of the project presents exciting challenges and requires specific attention. Have fun!.
 
