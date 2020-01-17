@@ -1776,3 +1776,133 @@ html,body,div,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,ol,ul,li,form,legend,
     }
 
 }
+
+/* 
+===================================================
+                the-footer
+===================================================
+*/
+
+footer {
+    border-top: 2px solid #f4f5f6;
+    background-color: white;
+    padding: 30px;
+}
+
+footer .top-brand {
+    align-items: flex-end;
+}
+
+footer .top-brand p {
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+footer svg {
+    display: block;
+    width: 236px;
+    height: 36px;
+    margin-right: 15px;
+    margin-bottom: 12px;
+    fill: #f72210;
+}
+
+footer .top-wrap {
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+footer .top-social-media {
+    color: #666;
+    margin-bottom: 12px;
+}
+
+footer .top-social-media a,
+footer .the-footer-links a {
+    color: inherit;
+    text-decoration: none;
+}
+
+footer ul {
+    list-style: none outside none;
+}
+
+footer ul li {
+    margin-left: 10px;
+}
+
+footer .top-social-media li:first-child,
+footer .mid-editions li:first-child {
+    margin-left: 0;
+}
+
+footer .genericon {
+    line-height: 24px;
+}
+
+
+.facebook:before {
+    content: "\f203";
+}
+.twitter:before {
+    content: "\f202";
+}
+.instagram:before {
+    content: "\f215";
+}
+.tumbler:before {
+    content: "\f214";
+}
+.the-footer .genericon .tumbler {
+    font-size: 20px;
+}
+.linkedin:before {
+    content: "\f207";
+}
+
+.the-footer-links {
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    border-top: 1px solid #d9d9d9;
+    padding-top: 6px;
+    font-size: 14px;
+    line-height: 15px;
+    color: #666;
+}
+
+.the-footer-links {
+    font-size: 14px;
+    line-height: 15px;
+    color: #666;
+}
+
+.mid-editions label {
+    margin-top: 6px;
+    margin-right: 15px;
+}
+
+.the-footer-links li {
+    display: inline-block;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+
+    .the-footer-links li {
+        border-right: 1px solid #d9d9d9;
+        padding-right: 10px;
+        margin-right: 10px;
+    }
+
+    .mid-editions li:last-of-type {
+        border-right: 0;
+        padding-right: 0;
+        margin-right: 0;
+    }
+
+}
