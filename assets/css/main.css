@@ -1535,6 +1535,7 @@ html,body,div,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,ol,ul,li,form,legend,
 .subscribe-block {
     padding-top: 40px;
     position: relative;
+    margin-bottom: 40px;
 }
 
  .subscribe-block .column1,
@@ -1786,7 +1787,7 @@ html,body,div,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,ol,ul,li,form,legend,
 footer {
     border-top: 2px solid #f4f5f6;
     background-color: white;
-    padding: 30px;
+    padding: 30px 15px;
 }
 
 footer .top-brand {
@@ -1850,14 +1851,19 @@ footer .genericon {
 .twitter:before {
     content: "\f202";
 }
+
+footer a.twitter {
+    font-size: 25px;
+}
+
 .instagram:before {
     content: "\f215";
 }
 .tumbler:before {
     content: "\f214";
 }
-.the-footer .genericon .tumbler {
-    font-size: 20px;
+footer a.tumbler {
+    font-size: 21px;
 }
 .linkedin:before {
     content: "\f207";
@@ -1887,8 +1893,21 @@ footer .genericon {
 
 .the-footer-links li {
     display: inline-block;
+    padding-right: 20px;
     margin: 6px 0;
     cursor: pointer;
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .top-social-media {
+        width: 100%;
+    }
+    .top-brand p {
+        width: 100%;
+    }
+
 }
 
 @media screen and (min-width: 768px) {
