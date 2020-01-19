@@ -819,7 +819,7 @@
     </div>
     <!-- After page wrap closing tag -->
     <div class="page-bottom">
-      <div class="inMagazine-block">
+<!--       <div class="inMagazine-block">
         <div class="content">
           <div class="magazine">
             <div class="full-row row">
@@ -1436,7 +1436,46 @@
             </ul>
           </div>
         </div>
-      </footer>
+      </footer> -->
+      <!-- HiDPI screeen's stories -->
+      <div class="HiDPI featured-stories">
+        <div class="content">
+          <div class="head-story">
+            <div class="title-HiDPI">
+              <a href="#">u.s.</a>
+            </div>
+            <article>
+              <div class="article-wrap">
+                <div class="image">
+                  <a href="#"><img class="img-fluid" src="assets/img/HiDPI_01.jpg"
+                      alt="Twitter Asks Space Force Why They Need Camo Uniforms"></a>
+                </div>
+              </div>
+              <h4 class="header-3">
+                <a href="#">Twitter Asks Space Force Why They Need Camo Uniforms</a>
+              </h4>
+            </article>
+          </div>
+        </div>
+      </div>
+      <div class="HiDPI featured-stories">
+        <div class="content">
+          <div class="head-story">
+            <article>
+              <div class="article-wrap">
+                <div class="image">
+                  <a href="#"><img class="img-fluid" src="assets/img/HiDPI_02.jpg"
+                      alt="Top Democrat Blasts Rules Which Could Ease Oversight of Firearms Exports"></a>
+                </div>
+              </div>
+              <h4 class="header-3">
+                <a href="#">Top Democrat Blasts Rules Which Could Ease Oversight of Firearms Exports</a>
+              </h4>
+            </article>
+          </div>
+        </div>
+      </div>
+
     </div>
 
 
@@ -1485,6 +1524,17 @@
       /* ---------------------------------------------- */
 
     });
+
+    var docWidth = document.documentElement.offsetWidth;
+
+[].forEach.call(
+  document.querySelectorAll('*'),
+  function(el) {
+    if (el.offsetWidth > docWidth) {
+      console.log(el);
+    }
+  }
+);
   </script>
 </body>
 

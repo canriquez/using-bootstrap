@@ -543,8 +543,10 @@ figure {
 
 .container-fluid {
   max-width: 1310px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow: hidden; 
+  /* fixing the hidden overflow with this overflow property */
 }
 
 .col1 .col-wrap,
@@ -1536,6 +1538,47 @@ figure {
 
 /*
 ===================================================
+                HiDPI screeen's stories
+===================================================
+*/
+
+
+.HiDPI .head-story .title-HiDPI {
+    border-top: 1px solid #d9d9d9;
+    color: #f72210;
+    padding-top: 25px;
+    font-size: 22px;
+    line-height: 22px;
+    font: bold 16px/16px "Roboto Condensed",sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 11px;
+ 
+}
+
+.HiDPI .title-HiDPI a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.HiDPI .head-story article h4 {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.HiDPI .head-story article {
+    padding-bottom: 0;
+}
+
+
+
+
+
+
+/*
+===================================================
                 subscribe - block
 ===================================================
 */
@@ -1913,3 +1956,5 @@ footer a.tumbler {
     margin-right: 0;
   }
 }
+
+
