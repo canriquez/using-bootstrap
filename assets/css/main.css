@@ -1542,6 +1542,11 @@ figure {
 ===================================================
 */
 
+.HiDPI .content {
+    padding-left: 1px;
+    padding-right: 1px;
+    margin: 0;
+}
 
 .HiDPI .head-story .title-HiDPI {
     border-top: 1px solid #d9d9d9;
