@@ -776,8 +776,43 @@ figure {
 .special-item-right .image > a > span {
   display: block;
   padding-bottom: 66.75%;
+}
 
-  /* Rest of background as inline style on the spam tag */
+#special-1 {
+    background: url(../img/sponsored-item1.jpg); background-size: cover; background-repeat: no-repeat;
+}
+
+#special-2 {
+    background: url(../img/sponsored-item2.jpg); background-size: cover; background-repeat: no-repeat;
+}
+
+#special-3 {
+    background: url(../img/sponsored-item3.png); background-size: cover; background-repeat: no-repeat;
+    background-position: 55% 55%;
+}
+
+#special-4 {
+    background: url(../img/sponsored-item4.png); background-size: cover; background-repeat: no-repeat;
+}
+
+#special-sub-1 {
+    background: url(../img/sponsored-item-sub1.png); background-size: cover; background-repeat: no-repeat;
+}
+
+#special-sub-2 {
+    background: url(../img/sponsored-item-sub2.jpg); background-size: cover; background-repeat: no-repeat;
+}
+
+#special-sub-3 {
+    background: url(../img/sponsored-item-sub3.jpg); background-size: cover; background-repeat: no-repeat;
+    background-position: 50% 50%; 
+    background-repeat: no-repeat;
+}
+
+#special-sub-4 {
+    background: url(../img/sponsored-item-sub4.png); background-size: cover; background-repeat: no-repeat;
+    background-position: 50% 50%; 
+    background-repeat: no-repeat;
 }
 
 #news-opinion .head-story {
@@ -1206,11 +1241,7 @@ figure {
     max-width: inherit;
   }
 
-  .magazine-3-features article:first-of-type .image img {
-    width: 100%;
-    height: auto;
-  }
-
+ 
   .magazine h5 {
     margin-bottom: 0;
     font-size: 20px;
@@ -1232,6 +1263,10 @@ figure {
     padding-right: 15px;
     padding-left: 15px;
   }
+  .magazine-3-features .features-title {
+      margin-top:30px;
+  }
+
 }
 
 /*
@@ -1340,6 +1375,7 @@ figure {
   height: auto;
 }
 
+
 .newsweek-videos .info {
   padding: 20px;
 }
@@ -1368,6 +1404,10 @@ figure {
 @media screen and (min-width: 768px) {
   .key-video {
     width: 66.66%;
+  }
+
+  .key-video .image a {
+    background-image: url(../img/newsweek-conversations-1.jpg);
   }
 
   .video-options {
@@ -1436,6 +1476,19 @@ figure {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    
+  }
+
+  #option-1 {
+    background-image: url(../img/newsweek-conversations-2.jpg);
+  }
+
+  #option-2 {
+    background-image: url(../img/newsweek-conversations-3.jpg);
+  }
+
+  #option-3 {
+    background-image: url(../img/newsweek-conversations-4.jpg);
   }
 
   .video-options .play-icon-sm {
