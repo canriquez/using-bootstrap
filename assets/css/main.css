@@ -1587,7 +1587,7 @@ figure {
   }
   
   .latest-news .head-story .image {
-    width: 135px;
+    width: 138px;
     min-width: 135px;
     margin-right: 15px;
   }
@@ -1609,6 +1609,19 @@ figure {
         width: 258px;
         min-width: 258px;
       }
+  }
+
+  @media screen and (min-width: 768px) {
+    .latest-news .head-story .image {
+        width: 138px;
+        min-width: 135px;
+        margin-right: 15px;
+      }
+
+      .latest-news ul.hidpi-subsection li:first-child {
+        padding-top: 0px;
+      }
+
   }
 
 /*

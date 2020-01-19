@@ -818,8 +818,8 @@
       </div>
     </div>
     <!-- After page wrap closing tag -->
-    <div class="page-bottom">
-<!--       <div class="inMagazine-block">
+    <div class="page-bottom ">
+      <!--       <div class="inMagazine-block">
         <div class="content">
           <div class="magazine">
             <div class="full-row row">
@@ -1438,78 +1438,76 @@
         </div>
       </footer> -->
       <!-- HiDPI screeen's stories -->
-      <div class="HiDPI featured-stories">
-        <div class="content">
-          <div class="head-story">
-            <div class="title-HiDPI">
-              <a href="#">u.s.</a>
+      <div class="HiDPI featured-stories row">
+        <div class="container-fluid">
+          <div class="content row col-md-12">
+            <div class="head-story">
+              <div class="title-HiDPI">
+                <a href="#">u.s.</a>
+              </div>
+              <div class="wrap row">
+                <article class="col-md-4">
+                  <div class="article-wrap">
+                    <div class="image">
+                      <a href="#"><img class="img-fluid" src="assets/img/HiDPI_01.jpg"
+                          alt="Twitter Asks Space Force Why They Need Camo Uniforms"></a>
+                    </div>
+                  </div>
+                  <h4 class="header-3">
+                    <a href="#">Twitter Asks Space Force Why They Need Camo Uniforms</a>
+                  </h4>
+                </article>
+                <article class="col-md-4">
+                  <div class="article-wrap">
+                    <div class="image">
+                      <a href="#"><img class="img-fluid" src="assets/img/HiDPI_02.jpg"
+                          alt="Top Democrat Blasts Rules Which Could Ease Oversight of Firearms Exports"></a>
+                    </div>
+                  </div>
+                  <h4 class="header-3">
+                    <a href="#">Top Democrat Blasts Rules Which Could Ease Oversight of Firearms Exports</a>
+                  </h4>
+                </article>
+                <div class="latest-news col-md-4">
+                  <div class="content">
+                    <div class="head-story">
+                      <ul class="hidpi-subsection">
+                        <li class="d-flex">
+                          <div class="image">
+                            <a href="#">
+                              <img class="img-fluid" src="assets/img/HiDPI_03.jpg" alt="opinion journalist">
+                            </a>
+                          </div>
+                          <div class="info">
+                            <a href="#">Kanye West Faces Criticism for Headlining Event With Anti-LGBTQ Leaders</a>
+                          </div>
+                        </li>
+                        <li class="d-flex">
+                          <div class="image">
+                            <a href="#">
+                              <img class="img-fluid" src="assets/img/HiDPI_04.png" alt="opinion journalist">
+                            </a>
+                          </div>
+                          <div class="info">
+                            <a href="#">California Convict Kills Pedophile in Prison Attack Says CDCR</a>
+                          </div>
+                        </li>
+                        <li class="d-flex">
+                          <div class="image">
+                            <a href="#">
+                              <img class="img-fluid" src="assets/img/HiDPI_05.jpg" alt="opinion journalist">
+                            </a>
+                          </div>
+                          <div class="info">
+                            <a href="#">Mega Millions Results, Numbers for 1/17/20: Did Anyone Win the Jackpot?</a>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <article>
-              <div class="article-wrap">
-                <div class="image">
-                  <a href="#"><img class="img-fluid" src="assets/img/HiDPI_01.jpg"
-                      alt="Twitter Asks Space Force Why They Need Camo Uniforms"></a>
-                </div>
-              </div>
-              <h4 class="header-3">
-                <a href="#">Twitter Asks Space Force Why They Need Camo Uniforms</a>
-              </h4>
-            </article>
-          </div>
-        </div>
-      </div>
-      <div class="HiDPI featured-stories">
-        <div class="content">
-          <div class="head-story">
-            <article>
-              <div class="article-wrap">
-                <div class="image">
-                  <a href="#"><img class="img-fluid" src="assets/img/HiDPI_02.jpg"
-                      alt="Top Democrat Blasts Rules Which Could Ease Oversight of Firearms Exports"></a>
-                </div>
-              </div>
-              <h4 class="header-3">
-                <a href="#">Top Democrat Blasts Rules Which Could Ease Oversight of Firearms Exports</a>
-              </h4>
-            </article>
-          </div>
-        </div>
-      </div>
-      <div class="latest-news">
-        <div class="content">
-          <div class="head-story">
-            <ul class="hidpi-subsection">
-              <li class="d-flex">
-                <div class="image">
-                  <a href="#">
-                    <img class="img-fluid" src="assets/img/HiDPI_03.jpg" alt="opinion journalist">
-                  </a>
-                </div>
-                <div class="info">
-                  <a href="#">Kanye West Faces Criticism for Headlining Event With Anti-LGBTQ Leaders</a>
-                </div>
-              </li>
-              <li class="d-flex">
-                <div class="image">
-                  <a href="#">
-                    <img class="img-fluid" src="assets/img/HiDPI_04.png" alt="opinion journalist">
-                  </a>
-                </div>
-                <div class="info">
-                  <a href="#">California Convict Kills Pedophile in Prison Attack Says CDCR</a>
-                </div>
-              </li>
-              <li class="d-flex">
-                <div class="image">
-                  <a href="#">
-                    <img class="img-fluid" src="assets/img/HiDPI_05.jpg" alt="opinion journalist">
-                  </a>
-                </div>
-                <div class="info">
-                  <a href="#">Mega Millions Results, Numbers for 1/17/20: Did Anyone Win the Jackpot?</a>
-                </div>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
@@ -1565,14 +1563,14 @@
 
     var docWidth = document.documentElement.offsetWidth;
 
-[].forEach.call(
-  document.querySelectorAll('*'),
-  function(el) {
-    if (el.offsetWidth > docWidth) {
-      console.log(el);
-    }
-  }
-);
+    [].forEach.call(
+      document.querySelectorAll('*'),
+      function (el) {
+        if (el.offsetWidth > docWidth) {
+          console.log(el);
+        }
+      }
+    );
   </script>
 </body>
 
