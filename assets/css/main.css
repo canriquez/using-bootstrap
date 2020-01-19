@@ -1555,9 +1555,8 @@ figure {
     font-size: 22px;
     line-height: 22px;
     font: bold 16px/16px "Roboto Condensed",sans-serif;
-    text-transform: uppercase;
+    text-transform: none;
     padding-bottom: 11px;
- 
 }
 
 .HiDPI .title-HiDPI a {
