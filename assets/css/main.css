@@ -1592,10 +1592,7 @@ figure {
     margin-right: 15px;
   }
 
-  .latest-news .head-story .image {
-    width: 258px;
-    min-width: 258px;
-  }
+ 
   .latest-news ul.hidpi-subsection li {
     border-bottom: 1px solid #ddd;
     border-top: 0px;
@@ -1607,7 +1604,12 @@ figure {
     border-bottom: 0px;
   }
 
-
+  @media screen and (min-width: 481px) {
+    .latest-news .head-story .image {
+        width: 258px;
+        min-width: 258px;
+      }
+  }
 
 /*
 ===================================================
