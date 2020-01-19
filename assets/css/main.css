@@ -545,7 +545,8 @@ figure {
   max-width: 1310px;
   padding-left: 20px;
   padding-right: 20px;
-  overflow: hidden; 
+  overflow: hidden;
+
   /* fixing the hidden overflow with this overflow property */
 }
 
@@ -779,40 +780,52 @@ figure {
 }
 
 #special-1 {
-    background: url(../img/sponsored-item1.jpg); background-size: cover; background-repeat: no-repeat;
+  background: url(../img/sponsored-item1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #special-2 {
-    background: url(../img/sponsored-item2.jpg); background-size: cover; background-repeat: no-repeat;
+  background: url(../img/sponsored-item2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #special-3 {
-    background: url(../img/sponsored-item3.png); background-size: cover; background-repeat: no-repeat;
-    background-position: 55% 55%;
+  background: url(../img/sponsored-item3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 55% 55%;
 }
 
 #special-4 {
-    background: url(../img/sponsored-item4.png); background-size: cover; background-repeat: no-repeat;
+  background: url(../img/sponsored-item4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #special-sub-1 {
-    background: url(../img/sponsored-item-sub1.png); background-size: cover; background-repeat: no-repeat;
+  background: url(../img/sponsored-item-sub1.png);
+  background-size: cover;
 }
 
 #special-sub-2 {
-    background: url(../img/sponsored-item-sub2.jpg); background-size: cover; background-repeat: no-repeat;
+  background: url(../img/sponsored-item-sub2.jpg);
+  background-size: cover;
 }
 
 #special-sub-3 {
-    background: url(../img/sponsored-item-sub3.jpg); background-size: cover; background-repeat: no-repeat;
-    background-position: 50% 50%; 
-    background-repeat: no-repeat;
+  background: url(../img/sponsored-item-sub3.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 #special-sub-4 {
-    background: url(../img/sponsored-item-sub4.png); background-size: cover; background-repeat: no-repeat;
-    background-position: 50% 50%; 
-    background-repeat: no-repeat;
+  background: url(../img/sponsored-item-sub4.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 #news-opinion .head-story {
@@ -1241,7 +1254,6 @@ figure {
     max-width: inherit;
   }
 
- 
   .magazine h5 {
     margin-bottom: 0;
     font-size: 20px;
@@ -1263,10 +1275,10 @@ figure {
     padding-right: 15px;
     padding-left: 15px;
   }
-  .magazine-3-features .features-title {
-      margin-top:30px;
-  }
 
+  .magazine-3-features .features-title {
+    margin-top: 30px;
+  }
 }
 
 /*
@@ -1375,7 +1387,6 @@ figure {
   height: auto;
 }
 
-
 .newsweek-videos .info {
   padding: 20px;
 }
@@ -1476,7 +1487,6 @@ figure {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    
   }
 
   #option-1 {
@@ -1596,95 +1606,91 @@ figure {
 */
 
 .HiDPI .content {
-    padding-left: 1px;
-    padding-right: 1px;
-    margin: 0;
+  padding-left: 1px;
+  padding-right: 1px;
+  margin: 0;
 }
 
 .HiDPI .head-story .title-HiDPI {
-    border-top: 1px solid #d9d9d9;
-    color: #f72210;
-    padding-top: 25px;
-    font-size: 22px;
-    line-height: 22px;
-    font: bold 16px/16px "Roboto Condensed",sans-serif;
-    text-transform: none;
-    padding-bottom: 11px;
+  border-top: 1px solid #d9d9d9;
+  color: #f72210;
+  padding-top: 25px;
+  font: bold 22px/22px "Roboto Condensed", sans-serif;
+  text-transform: none;
+  padding-bottom: 11px;
 }
 
 .HiDPI .title-HiDPI a {
-    color: inherit;
-    text-decoration: none;
-    font-size: 22px;
+  color: inherit;
+  text-decoration: none;
+  font-size: 22px;
 }
 
 .HiDPI .head-story article h4 {
-    margin-top: 10px;
-    margin-bottom: 25px;
-    font-size: 18px;
-    line-height: 18px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 18px;
 }
 
 .HiDPI .head-story article {
-    padding-bottom: 0;
+  padding-bottom: 0;
 }
 
 
 /* HiDPI latest news Subsection */
 
-  .latest-news .head-story {
-    font: bold 17px/21px "Roboto Condensed", sans-serif;
-    color: black;
-    margin-bottom: 30px;
+.latest-news .head-story {
+  font: bold 17px/21px "Roboto Condensed", sans-serif;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.latest-news .head-story a {
+  font: inherit;
+  color: inherit;
+}
+
+.latest-news .head-story .image {
+  width: 138px;
+  min-width: 135px;
+  margin-right: 15px;
+}
+
+.latest-news ul.hidpi-subsection li {
+  border-bottom: 1px solid #ddd;
+  border-top: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.latest-news ul.hidpi-subsection li:last-child {
+  border-bottom: 0;
+}
+
+@media screen and (min-width: 481px) {
+  .latest-news .head-story .image {
+    width: 258px;
+    min-width: 258px;
   }
-  
-  .latest-news .head-story a {
-    font: inherit;
-    color: inherit;
-  }
-  
+}
+
+@media screen and (min-width: 768px) {
   .latest-news .head-story .image {
     width: 138px;
     min-width: 135px;
     margin-right: 15px;
   }
 
- 
-  .latest-news ul.hidpi-subsection li {
-    border-bottom: 1px solid #ddd;
-    border-top: 0px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  .latest-news ul.hidpi-subsection li:first-child {
+    padding-top: 0;
   }
 
-  .latest-news ul.hidpi-subsection li:last-child {
-    border-bottom: 0px;
+  .HiDPI .head-story article h4 {
+    font-size: 22px;
+    line-height: 22px;
   }
-
-  @media screen and (min-width: 481px) {
-    .latest-news .head-story .image {
-        width: 258px;
-        min-width: 258px;
-      }
-  }
-
-  @media screen and (min-width: 768px) {
-    .latest-news .head-story .image {
-        width: 138px;
-        min-width: 135px;
-        margin-right: 15px;
-      }
-
-      .latest-news ul.hidpi-subsection li:first-child {
-        padding-top: 0px;
-      }
-
-      .HiDPI .head-story article h4{
-        font-size: 22px;
-        line-height: 22px;
-      }
-
-  }
+}
 
 /*
 ===================================================
@@ -2065,5 +2071,3 @@ footer a.tumbler {
     margin-right: 0;
   }
 }
-
-
