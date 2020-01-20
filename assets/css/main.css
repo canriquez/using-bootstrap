@@ -530,10 +530,10 @@ figure {
   }
 
   #search-input {
-    outline:none;
+    outline: none;
   }
-  /* this will disable the outline when input text is on focus */
 
+  /* this will disable the outline when input text is on focus */
 }
 
 /*
