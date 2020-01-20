@@ -530,6 +530,7 @@ figure {
   }
 
   #search-input {
+      border: none;
     outline: none;
   }
 
