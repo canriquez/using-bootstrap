@@ -214,7 +214,7 @@
                           <a href="#">sponsored insight</a>
                         </div>
                         <div class="image">
-                          <a href="#"><span id="special-2" ></span>
+                          <a href="#"><span id="special-2"></span>
                           </a>
                         </div>
                       </div>
@@ -975,7 +975,7 @@
           <div class="video-wall d-flex flex-wrap blk-bgnd">
             <article class="key-video d-flex flex-wrap">
               <div class="image">
-                <a  href="#">
+                <a href="#">
                   <img class="img-fluid" src="assets/img/newsweek-conversations-1.jpg" alt="">
                 </a>
                 <span class="genericon play-icon"></span>
@@ -1929,12 +1929,14 @@
 
       /* -------- Click on search mignifier - Version 2 -------- */
 
-      $('.header-nav-search-inline label').on('click', function () {
+      $('.header-nav-search-inline input').on('click', function () {
         $('.header-nav-search-form').toggleClass('active').focus();
         $('.header-nav-search-inline').toggleClass('cursor').focus();
         $('.header-nav .header-nav-search-inline input').toggleClass('fullRow').focus();
         $('.flex-col form').siblings().toggleClass('nonActive').focus();
       });
+
+
 
       /* ---------------------------------------------- */
 

@@ -528,6 +528,12 @@ figure {
     border-left-width: 0;
     padding-left: 10px;
   }
+
+  #search-input {
+    outline:none;
+  }
+  /* this will disable the outline when input text is on focus */
+
 }
 
 /*
