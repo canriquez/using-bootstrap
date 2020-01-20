@@ -15,9 +15,12 @@ The overall page contains the following sections:
 - Newsweek Conversations
 - Editor Pick
 - Featured Slideshow
+- <Hidden - HiDPI screen section> -- See NOTE paragraph below.
 - Subscribe 
 - Footer
- 
+
+Important NOTE: This page has a special section that only appears in laptops with HiDPI screens. For this section to render and so, you able to clone it, make sure using chrome in developer mode, and adding the screen type: "Laptop with HiDPI screen". You add this option, by going into the Edit menu, in the list where you select the type of devices to test responsiveness.
+
 This project offers a great chance to practice in a repetitive way key concepts of positioning, image positioning and adjustment, CSS responsiveness, and much more. Prepare for several hours of fun. Drink lots of water in the process of enjoying this project.
  
 ## Key points to highlight: 
