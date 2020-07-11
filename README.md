@@ -19,12 +19,12 @@ The overall page contains the following sections:
 - Subscribe 
 - Footer
 
-Important NOTE: This page has a special section that only appears in laptops with HiDPI screens. For this section to render and so, you able to clone it, make sure using chrome in developer mode, and adding the screen type: "Laptop with HiDPI screen". You add this option, by going into the Edit menu, in the list where you select the type of devices to test responsiveness.
+Important NOTE: This page has a special section that only appears on laptops with HiDPI screens. For this section to render appropriately, make sure using chrome in developer mode, and adding the screen type: "Laptop with HiDPI screen." You add this option, by going into the Edit menu, in the list where you select the model of devices to test responsiveness.
 
 This project offers a great chance to practice in a repetitive way key concepts of positioning, image positioning and adjustment, CSS responsiveness, and much more. Prepare for several hours of fun. Drink lots of water in the process of enjoying this project.
  
 ## Key points to highlight: 
-The following media breaks represent a key CSS responsiveness detail in the page design:
+The following media breaks represent a crucial CSS responsiveness detail in the page design:
 
 - 991px media
 Column-4 contains:
@@ -33,7 +33,7 @@ Column-4 contains:
 Column-3 contains: 'Opinion", 'Latest News', 'Sponsored Insights', 'Sign Up' and some more 'Sponsored Insights.
 - On media <992, Columns structure changes To the following: 
     - Column 4 is placed on 100% of the viewport with Column 2 on 45% and Column 1 55% of that viewport. Article order and structure remain the same.
-        - Column 2 ('Featured Stories', 'sponsored Insights') - To the left of view port.
+        - Column 2 ('Featured Stories', 'sponsored Insights') - To the left of viewport.
         - Column 1 ('Top-Story', 'Culture an Travel' and 'More Stories' subsections)
     - Column 3 locates now wrapping below column 4 with the same order in articles
     - Column-3 contains: 'Opinion", 'Latest News', 'Sponsored Insights', 'Sign Up' and some more 'Sponsored Insights.
@@ -62,7 +62,7 @@ The rest of the project presents exciting challenges and requires specific atten
 - The project is part of The Odin project, and you can get access to the project specifications here [The Odin Project Link](https://www.theodinproject.com/courses/html5-and-css3/lessons/using-bootstrap)
 
 
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running, follow these simple example steps.
 
 - Clone the repository in your local machine
 
@@ -79,7 +79,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!
+Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/canriquez/using-bootstrap/issues).
 
@@ -94,4 +94,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](https://opensource.org/licenses/MIT) licensed.
+This project is [MIT](./LICENSE) licensed.
