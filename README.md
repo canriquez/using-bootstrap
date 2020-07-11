@@ -22,7 +22,13 @@ The overall page contains the following sections:
 Important NOTE: This page has a special section that only appears on laptops with HiDPI screens. For this section to render appropriately, make sure using chrome in developer mode, and adding the screen type: "Laptop with HiDPI screen." You add this option, by going into the Edit menu, in the list where you select the model of devices to test responsiveness.
 
 This project offers a great chance to practice in a repetitive way key concepts of positioning, image positioning and adjustment, CSS responsiveness, and much more. Prepare for several hours of fun. Drink lots of water in the process of enjoying this project.
- 
+
+
+## Live Demo
+
+[Live Demo Link ](https://rawcdn.githack.com/canriquez/using-bootstrap/637cfb09a8e6ac863c16dd7de9e309ee803166d0/index.html)
+
+
 ## Key points to highlight: 
 The following media breaks represent a crucial CSS responsiveness detail in the page design:
 
@@ -49,11 +55,6 @@ The rest of the project presents exciting challenges and requires specific atten
 
 - HTML5, CSS3, Js
 - Visual Studio Code
-
-
-## Live Demo
-
-[Live Demo Link](https://canriquez.github.io/using-bootstrap/)
 
 
 ## Getting Started
